@@ -1,0 +1,30 @@
+:root{--k:#050506;--w:#f5f5f7;--r:#ff2e43;--v:#7b61ff;--g:#9a9aa5;--c:#111115;--l:#2a2a31}
+*{box-sizing:border-box;margin:0}
+html,body{height:100%;background:#000;overflow:hidden;font-family:Roboto,'Helvetica Neue',Arial,sans-serif;color:var(--w)}
+#st{position:absolute;left:0;top:0;width:1920px;height:1080px;transform-origin:0 0}
+.s{position:absolute;inset:0;background:var(--k);padding:100px 140px;display:none;overflow:hidden;
+background-image:linear-gradient(rgba(255,255,255,.018) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.018) 1px,transparent 1px),radial-gradient(ellipse at var(--glow-v, 14% 18%),rgba(123,97,255,.11),transparent 42%),radial-gradient(ellipse at var(--glow-r, 88% 82%),rgba(255,46,67,.065),transparent 38%),linear-gradient(145deg,#09090d 0%,var(--k) 58%,#08070a 100%);background-size:120px 120px,120px 120px,auto,auto,auto}
+#st>.s:nth-child(3n+2){--glow-v:88% 16%;--glow-r:14% 84%}
+#st>.s:nth-child(3n){--glow-v:50% 8%;--glow-r:92% 55%}
+.s.on{display:block}
+h2{font-size:76px;font-weight:700;letter-spacing:-.02em;margin-bottom:60px}
+.r{opacity:0;transform:translateY(14px);animation:in .7s forwards;animation-delay:calc(var(--i,0)*.13s)}
+@keyframes in{to{opacity:1;transform:none}}
+@keyframes bl{50%{opacity:0}}
+@media(prefers-reduced-motion:reduce){.r{animation:none;opacity:1;transform:none}}
+.lg{font-weight:300;letter-spacing:-.05em;line-height:1}
+.lg b{font-weight:900;color:var(--r)}
+.lg i{font-style:normal;color:var(--v);font-weight:300;animation:bl 1.1s steps(1) 3}
+.g{color:var(--g)}.rd{color:var(--r)}.vi{color:var(--v)}
+.ch{display:flex;align-items:center}
+.nd{flex:1;border:2px solid var(--l);border-radius:20px;padding:40px 24px;font-size:38px;font-weight:500;text-align:center;background:var(--c);line-height:1.2}
+.ar{width:60px;color:var(--v);font-size:46px;text-align:center;flex:none}
+.hl{border-color:var(--r)}
+.foot{position:absolute;left:140px;bottom:44px;font-size:28px}
+.pg{position:absolute;right:140px;bottom:44px;font-size:24px;color:var(--g)}
+#nt{position:absolute;left:0;right:0;bottom:0;background:#000d;border-top:2px solid var(--r);padding:26px 140px;font-size:30px;line-height:1.4;display:none;z-index:9}
+.cd{background:var(--c);border:2px solid var(--l);border-radius:20px;padding:34px}
+.cd h3{font-size:36px;margin-bottom:22px}.cd p{font-size:30px;margin:12px 0}
+.dt{display:inline-block;width:20px;height:20px;border-radius:50%;margin-right:14px;background:var(--r);vertical-align:-2px}
+.dt.o{background:none;border:3px solid var(--v)}
+.ds{border-style:dashed}
